@@ -1,0 +1,173 @@
+.navi {
+  height: 200rpx;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navitext {
+  text-align: center;
+  padding-left: 50rpx;
+  line-height: 80rpx;
+  margin-top: 50rpx;
+  color: #000000;
+  font-weight: 600;
+}
+
+.add-btn {
+  font-size: 36rpx;
+  color: #007aff;
+  background-color: transparent;
+  border: none;
+  margin-right: 20rpx;
+}
+
+.contact {
+  position: relative;
+  top: 120rpx;
+}
+
+.icon {
+  height: 35rpx;
+  width: 35rpx;
+}
+
+.search {
+  padding: 0 30rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+input {
+  padding-left: 0rpx;
+  font-size: 28rpx;
+  flex-grow: 1;
+  color: rgb(0, 0, 0);
+  margin-left: -10rpx;
+}
+
+.group {
+  padding: 20rpx 40rpx;
+}
+
+.header {
+  color: rgb(85, 85, 85);
+  font-size: 24rpx;
+  font-weight: 500;
+  margin-top: 80rpx; 
+}
+
+.card {
+  margin: 40rpx;
+}
+
+.name {
+  font-size: 28rpx;
+}
+
+.nick {
+  font-size: 22rpx;
+  color: #999;
+}
+
+.line {
+  border-bottom: 1rpx solid #ddd;
+}
+
+.shortcut {
+  position: fixed;
+  right: 0;
+  top: 400rpx;
+  height: 60%;
+  width: 46rpx;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25rpx;
+  padding: 18rpx 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 1;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.letter {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #808080;
+  font-size: 20rpx;
+}
+
+
+/* 圆圈样式 */
+.add-circle {
+  position: fixed;
+  top: 1400rpx;        /* 距离顶部的距离 */
+  right: 20rpx;        /* 距离右侧的距离 */
+  width: 100rpx;       /* 圆圈的宽度 */
+  height: 100rpx;      /* 圆圈的高度 */
+  background-color: #007aff;  /* 蓝色背景 */
+  border-radius: 50%;  /* 设置为圆形 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.2);  /* 阴影效果 */
+}
+
+/* 加号样式 */
+.add-text {
+  font-size: 60rpx;    /* 加号的大小 */
+  color: white;        /* 加号的颜色 */
+}
+
+.container {
+  position: relative;
+  /* 其他样式 */
+}
+.navi {
+  height: 200rpx;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed; 
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container {
+  position: fixed; /* 固定搜索栏 */
+  top: 160rpx; /* 根据导航栏高度调整 */
+  left: 0; 
+  right: 0; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px; 
+  background-color: #f7f7f7; 
+  border-radius: 25px; 
+  box-shadow: 0 2rpx 5rpx rgba(0, 0, 0, 0.1); 
+  margin: 15px; 
+  z-index: 2; 
+}
+
+.search-input {
+  padding-left: 20rpx;
+  width: 90%; /* 设定宽度为90% */
+  height: 60rpx; /* 可以根据需要调整 */
+  color: #000000;
+  font-weight: 600;
+  border: none; /* 去掉默认边框 */
+}
+
+
+
+

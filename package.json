@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "pinyin": "^4.0.0-alpha.2"
+  }
+}

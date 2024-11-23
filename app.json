@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/card/card",
+    "pages/logs/logs",
+    "pages/add/add",
+    "pages/favorite/favorite",
+    "pages/favoritecard/favoritecard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+    
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

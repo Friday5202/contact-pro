@@ -1,0 +1,41 @@
+<!-- navi -->
+<view class="navi">
+  <view class="navitext">通讯录</view>
+  <view class="add-circle" bindtap="onAddContact">
+    <text class="add-text">+</text>
+  </view>
+</view>
+
+<!-- 搜索框 -->
+<view class="search-container">
+  <input class="search-input" placeholder="搜索联系人" bindinput="onSearchInput" />
+</view>
+
+<!-- contact -->
+<scroll-view class="contact" scroll-y="true" scroll-into-view="{{loc}}" style="height:{{screenHeight}}rpx" scroll-with-animation="true">
+  <view class="search"></view>
+  <block wx:for="{{filteredContacts}}" wx:key="letter">
+    <view class="group" wx:if="{{item.group.length != 0}}" id="{{item.letter}}">
+      <view class="header">{{item.letter}}</view>
+      <navigator class="card" wx:for="{{item.group}}" wx:for-item="star" wx:key="*this" url="/pages/card/card?id={{star._id}}">
+        <view class="name">{{star.name}}</view>
+      </navigator>
+      <view class="line"></view>
+    </view>
+  </block>
+  <view wx:if="{{filteredContacts.length === 0}}" class="no-contacts">没有匹配的联系人</view>
+</scroll-view>
+
+<!-- 右侧字母栏 -->
+<view class="shortcut">
+  <view class="letter" wx:for="{{letters}}" wx:key="*this" bindtap="onTapScroll" data-loc="{{item}}">
+    {{item}}
+  </view>
+</view>
+
+<!-- 底部按钮区域 -->
+<view class="button-section">
+  <button class="favorite-button" bindtap="onNavigateToFavorites">我的收藏</button>
+  <button class="export-button" bindtap="onExportContacts">导出联系人</button>
+  <button class="import-button" bindtap="onImportContacts">导入联系人</button>
+</view>

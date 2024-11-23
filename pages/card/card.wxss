@@ -1,0 +1,90 @@
+.contact-detail {
+  padding: 40rpx; /* 整体内边距 */
+}
+
+.thumbnail {
+  height: 140rpx;
+  width: 140rpx;
+  margin: 20rpx auto; /* 上下边距自动水平居中 */
+}
+
+.name {
+  text-align: center; /* 文本居中 */
+  font-size: 46rpx; /* 字体大小 */
+  font-weight: 500; /* 字体粗细 */
+  margin-bottom: 40rpx; /* 顶部边距 */
+}
+
+.line {
+  border-bottom: 1rpx solid #ddd; /* 分割线样式 */
+  margin-bottom: 40rpx; /* 分割线与下方组件的间距 */
+}
+
+/* 可编辑区域的样式 */
+.editable {
+  border: 1px solid #ddd; /* 添加边框 */
+  padding: 10rpx; /* 内边距 */
+  border-radius: 8rpx; /* 圆角边框 */
+  margin-bottom: 30rpx; /* 下方边距 */
+  background-color: #f9f9f9; /* 背景颜色，用于提示可编辑 */
+}
+
+.label {
+  font-size: 28rpx; /* 标签字体大小 */
+  color: #999; /* 标签字体颜色 */
+  margin-bottom: 10rpx; /* 标签与输入框的间距 */
+}
+
+.value {
+  font-size: 36rpx; /* 输入框字体大小 */
+  color: #000; /* 输入框字体颜色 */
+  width: 100%; /* 输入框宽度 */
+  background-color: transparent; /* 输入框透明背景，与容器背景一致 */
+  border: none; /* 无边框 */
+}
+
+/* 操作按钮区域样式 */
+.operation-section {
+  margin-top: 40rpx; /* 操作区与上方的间距 */
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: space-around; /* 平均分布按钮 */
+}
+
+/* 按钮公共样式 */
+button {
+  width: 300rpx; /* 按钮宽度 */
+  height: 80rpx; /* 按钮高度 */
+  background-color: #007aff; /* 主按钮颜色 */
+  color: white; /* 字体颜色 */
+  border-radius: 20rpx; /* 圆角 */
+  font-size: 32rpx; /* 字体大小 */
+  text-align: center; /* 文本居中 */
+}
+
+/* 警告按钮样式 */
+button[type="warn"] {
+  background-color: #ff4d4d; /* 警告按钮颜色 */
+  color: rgb(255, 255, 255); /* 字体颜色 */
+}
+
+/* 收藏按钮特定样式 */
+.favorite-section {
+  margin-top: 40rpx; /* 顶部间距 */
+  display: flex; /* 使用 Flexbox 来居中 */
+  justify-content: center; /* 居中对齐 */
+}
+
+.favorite-section button {
+  width: 300rpx; /* 同其他按钮宽度 */
+  height: 80rpx; /* 同其他按钮高度 */
+  background-color: #007aff; /* 收藏按钮颜色 */
+  color: white; /* 字体颜色 */
+  border-radius: 20rpx; /* 圆角 */
+  font-size: 32rpx; /* 字体大小 */
+  text-align: center; /* 文本居中 */
+}
+
+/* 收藏状态改变后按钮颜色 */
+.favorite-section button.favorited {
+  background-color: #ffcc00; /* 收藏状态的按钮颜色 */
+}

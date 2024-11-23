@@ -1,0 +1,24 @@
+<view class="contact-detail">
+  <!-- 联系人基本信息 -->
+  <view class="info-section">
+    <view class="field editable">
+      <view class="label">姓名:</view>
+      <input class="value" value="{{contact.name}}" disabled="{{!isEditing}}" bindinput="onNameInput" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">电话:</view>
+      <input class="value" value="{{contact.phone}}" disabled="{{!isEditing}}" bindinput="onPhoneInput" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">邮箱:</view>
+      <input class="value" value="{{contact.email}}" disabled="{{!isEditing}}" bindinput="onEmailInput" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">地址:</view>
+      <input class="value" value="{{contact.address}}" disabled="{{!isEditing}}" bindinput="onAddressInput" />
+    </view>
+  </view>
+</view>

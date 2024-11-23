@@ -1,0 +1,53 @@
+/* pages/favoritecard/favoritecard.wxss */
+
+.contact-detail {
+  padding: 30rpx; /* 给容器添加内边距 */
+  background-color: #f8f8f8; /* 背景颜色 */
+  border-radius: 10rpx; /* 圆角效果 */
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.info-section {
+  background-color: #fff; /* 白色背景 */
+  border-radius: 10rpx; /* 圆角效果 */
+  padding: 20rpx; /* 内边距 */
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  margin-bottom: 20rpx; /* 信息部分和按钮的间距 */
+}
+
+.field {
+  margin-bottom: 20rpx; /* 每个字段的底部间距 */
+}
+
+.label {
+  display: block; /* 块级元素以控制布局 */
+  font-size: 30rpx; /* 标签字体大小 */
+  color: #555; /* 标签颜色 */
+  margin-bottom: 5rpx; /* 标签和输入框之间的间距 */
+}
+
+.value {
+  font-size: 28rpx; /* 输入框字体大小 */
+  color: #333; /* 输入框字体颜色 */
+  width: 100%; /* 输入框宽度填满 */
+  padding: 10rpx; /* 输入框内边距 */
+  border: 1rpx solid #ccc; /* 边框 */
+  border-radius: 4rpx; /* 圆角 */
+  background-color: #fff; /* 输入框背景颜色 */
+}
+
+/* 输入框不可编辑时的样式 */
+.value[disabled] {
+  background-color: #f0f0f0; /* 不可编辑时的背景颜色 */
+  color: #999; /* 不可编辑时的文本颜色 */
+}
+
+/* 操作区 */
+.operation-section {
+  display: flex; /* 使用 Flexbox 对齐 */
+  justify-content: space-between; /* 在空间中均匀分配 */
+  align-items: center; /* 垂直居中 */
+  margin-top: 20rpx; /* 操作区的上边距 */
+}
+
+

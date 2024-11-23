@@ -1,0 +1,26 @@
+<!-- navi -->
+<view class="navi">
+  <view class="navitext">我的收藏</view>
+</view>
+
+<!-- contact -->
+<scroll-view class="contact" scroll-y="true" scroll-into-view="{{loc}}" style="height:{{screenHeight}}rpx" scroll-with-animation="true">
+  <view class="search"></view>
+  <block wx:for="{{filteredContacts}}" wx:key="letter">
+    <view class="group" wx:if="{{item.group.length != 0}}" id="{{item.letter}}">
+      <view class="header">{{item.letter}}</view>
+      <view class="card" wx:for="{{item.group}}" wx:key="*this" data-id="{{item._id}}" bindtap="navigateToContactDetail">
+        <view class="name">{{item.name}}</view>
+      </view>
+      <view class="line"></view>
+    </view>
+    <view wx:else id="{{item.letter}}"></view>
+  </block>
+</scroll-view>
+
+<!-- 右侧字母栏 -->
+<view class="shortcut">
+  <view class="letter" wx:for="{{letters}}" wx:key="*this" bindtap="onTapScroll" data-loc="{{item}}">
+    {{item}}
+  </view>
+</view>

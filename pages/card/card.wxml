@@ -1,0 +1,38 @@
+<view class="contact-detail">
+  <!-- 联系人基本信息 -->
+  <view class="info-section">
+    <view class="field editable">
+      <view class="label">姓名:</view>
+      <input class="value" value="{{contact.name}}" disabled="{{!isEditing}}" bindinput="onNameInput" placeholder="请输入姓名" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">电话:</view>
+      <input class="value" value="{{contact.phone}}" disabled="{{!isEditing}}" bindinput="onPhoneInput" placeholder="请输入电话" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">邮箱:</view>
+      <input class="value" value="{{contact.email}}" disabled="{{!isEditing}}" bindinput="onEmailInput" placeholder="请输入邮箱" />
+    </view>
+
+    <view class="field editable">
+      <view class="label">地址:</view>
+      <input class="value" value="{{contact.address}}" disabled="{{!isEditing}}" bindinput="onAddressInput" placeholder="请输入地址" />
+    </view>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="operation-section">
+    <button class="btn-primary" bindtap="onEditContact" wx:if="{{!isEditing}}">修改联系人</button>
+    <button class="btn-primary" bindtap="onSaveContact" wx:if="{{isEditing}}">保存</button>
+    <button class="btn-danger" bindtap="onDeleteContact">删除联系人</button>
+  </view>
+
+  <!-- 收藏按钮 -->
+  <view class="favorite-section">
+    <button bindtap="toggleFavorite" class="{{contact.isFavorited ? 'favorited' : ''}}">
+      {{contact.isFavorited ? '取消收藏' : '收藏'}}
+    </button>
+  </view>
+</view>
